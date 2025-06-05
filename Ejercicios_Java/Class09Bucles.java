@@ -35,7 +35,7 @@ public class Class09Bucles {
         for (int i = 0; i <= 20; i+=2){
             System.out.println(i);
         }
-        // MISMO EJERCICIO
+        // VARIANTE FOR: MOSTRAR NUMEROS PARES HASTA 20
         for (int i = 0; i <= 20; i+=2){
             if (i % 2 == 0){
                 System.out.println(i);
@@ -44,6 +44,8 @@ public class Class09Bucles {
 
         // WHILE: PEDIR AL USUARIO TEXTOS HASTA QUE ESCRIBA STOP
         //lo comentado no funciona porque Java no compara String con == o !=
+
+        //----------------------------------------------------------------------
         // while (dato != "stop"){
         // Scanner teclado = new Scanner (System.in);
         // String dato = "";
@@ -52,9 +54,10 @@ public class Class09Bucles {
         // while (dato != "stop"){
             //     System.out.println("Di algo bonito (escribe stop para salir)");
             //     dato = teclado.nextLine();
+        //----------------------------------------------------------------------
             
-            //se comparan objetos y hay que comparar su valor de ese objeto
-            //para hacerlo usaremos el metodo equals() de la clase String.
+        //se comparan objetos y hay que comparar su valor de ese objeto
+        //para hacerlo usaremos el metodo equals() de la clase String.
         Scanner teclado = new Scanner (System.in);
         String dato = "";
         while (dato.equals ("stop") == false){

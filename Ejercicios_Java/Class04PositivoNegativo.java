@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Class04PositivoNegativo {
     public static void main(String[] args) {
-        //CALCULAR SI EL n2ERO ES POSITIVO O NEGATIVO
+        //CALCULAR SI EL NÚMERO ES POSITIVO O NEGATIVO
 
         //Crear objeto
         Scanner teclado = new Scanner (System.in);
@@ -13,13 +13,13 @@ public class Class04PositivoNegativo {
         int n = Integer.parseInt(dato);
 
         if (n > 0){
-            System.out.println("El n2ero es POSITIVO");
+            System.out.println("El numero es POSITIVO");
         }
         else if (n == 0){
-            System.out.println("El n2ero es 0");
+            System.out.println("El numero es 0");
         }
        else{
-           System.out.println("El n2ero es NEGATIVO");
+           System.out.println("El numero es NEGATIVO");
        }
         
     }

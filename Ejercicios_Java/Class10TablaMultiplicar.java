@@ -16,15 +16,9 @@ public class Class10TablaMultiplicar {
         System.out.println("TABLA DEL " + nTabla);
         System.out.println("------------------------------");
         
-        if(nTabla % 1 == 0){
-            for (int i= 1; i <= 10; i++){
-                
-                System.out.println(nTabla +  " X " + i + "= " + i * nTabla);
-            }
+        for (int i= 1; i <= 10; i++){
+            System.out.println(nTabla +  " X " + i + "= " + i * nTabla);
         }
-        else{
-            System.out.println("ERROR: El numero debe ser entero");
-        }
-        System.out.println("------------------------------");
+       
     }
 }

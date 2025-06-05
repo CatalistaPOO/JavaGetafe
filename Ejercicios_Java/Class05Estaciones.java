@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Class05Estaciones {
     public static void main(String[] args) {
-        //PEDIR n2ERO A USUARIO ENTRE 1 Y 4 PARA INDICAR ESTACION DEL AÑO EQUIVALENTE
+        //PEDIR NÚMERO A USUARIO ENTRE 1 Y 4 PARA INDICAR ESTACION DEL AÑO EQUIVALENTE
         
         Scanner teclado = new Scanner(System.in);
 
