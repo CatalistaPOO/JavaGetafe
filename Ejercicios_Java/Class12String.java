@@ -34,4 +34,3 @@ public class Class12String {
         System.out.println(texto);
     }
 }
-//

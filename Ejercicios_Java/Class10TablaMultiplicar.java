@@ -19,7 +19,7 @@ public class Class10TablaMultiplicar {
         if(nTabla % 1 == 0){
             for (int i= 1; i <= 10; i++){
                 
-                System.out.println(i +  " X " +  nTabla + "= " + i * nTabla);
+                System.out.println(nTabla +  " X " + i + "= " + i * nTabla);
             }
         }
         else{
