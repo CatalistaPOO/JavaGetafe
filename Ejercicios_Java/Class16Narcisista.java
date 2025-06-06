@@ -23,11 +23,14 @@ public class Class16Narcisista {
             int longitud = narcisista.length();
             char letra = narcisista.charAt(i);
             //convertir la letra a String
-            String letraString =  Character.toString(letra);
-            //convertimos el char a numero
-            int numero = Integer.parseInt(letraString);
-
+            String letraAString =  Character.toString(letra);
+            //convertimos el string a numero
+            int numero = Integer.parseInt(letraAString);
             suma += Math.pow(numero,longitud);
+
+            // //Equivale al contenido de for, que realiza todas las conversiones
+            // suma += Math.pow(Integer.parseInt(Character.toString(narcisista.charAt(i))), narcisista.length());
+
         }
         if (suma == Integer.parseInt(narcisista)){
             System.out.println("El numero es NARCISISTA");
