@@ -15,6 +15,9 @@ public class Class15SumarTextoNumeros {
             String aux = String.valueOf(letra);
             int numero = Integer.parseInt(aux);
             suma += numero;
+
+            //Equivale a el contenido de for (hace conversion de valores):
+            // suma += Integer.parseInt(String.valueOf(textoNumeros.charAt(i)));
         }
         System.out.println("la suma de los caracteres es: " + suma);
     }
