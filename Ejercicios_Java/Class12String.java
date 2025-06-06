@@ -32,5 +32,12 @@ public class Class12String {
         System.out.println(texto);
         texto = texto.toUpperCase();
         System.out.println(texto);
+
+
+        //recuperar caracter a caracter un string
+        for (int i =1; i< texto.length();i++){
+            char letra = texto.charAt(i);
+            System.out.println("Letra_" + i + ": " + letra);
+        }
     }
 }
