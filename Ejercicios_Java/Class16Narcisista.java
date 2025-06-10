@@ -16,16 +16,16 @@ public class Class16Narcisista {
         Scanner teclado = new Scanner(System.in);
         int suma = 0;
 
-        System.out.println("Introduce numero para saber es narcisista");
+        System.out.println("Introduce número para saber es narcisista");
         String narcisista = teclado.nextLine();
 
         for (int i = 0; i < narcisista.length(); i++){
             int longitud = narcisista.length();
             char letra = narcisista.charAt(i);
             //convertir la letra a String
-            String letraAString =  Character.toString(letra);
+            String letraToString =  Character.toString(letra);
             //convertimos el string a numero
-            int numero = Integer.parseInt(letraAString);
+            int numero = Integer.parseInt(letraToString);
             suma += Math.pow(numero,longitud);
 
             // //Equivale al contenido de for, que realiza todas las conversiones
@@ -33,10 +33,10 @@ public class Class16Narcisista {
 
         }
         if (suma == Integer.parseInt(narcisista)){
-            System.out.println("El numero es NARCISISTA");
+            System.out.println("El " + narcisista + " es NARCISISTA");
         }
         else{
-            System.out.println("El numero NO es narcisista");
+            System.out.println("El " + narcisista + " NO es narcisista");
         }
     }
 }
