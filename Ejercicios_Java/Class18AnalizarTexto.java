@@ -24,28 +24,26 @@ public class Class18AnalizarTexto {
         int mayusculas = 0;
         for (int i = 0; i < texto.length(); i++){
             char letra = texto.charAt(i);
-            if (Character.isAlphabetic(letra) == true){
-                
-                if (Character.isLetter(letra) == true){
+            if (Character.isDigit(letra) == false){
+                if(Character.isWhitespace(letra) == false){
                     nletras ++;
                 }
                 if (Character.isUpperCase(letra) == true) {
                     mayusculas ++;
                 }
-                if ("aeiou".indexOf(Character.toLowerCase(i)) != -1) {
+               if ("aeiou".indexOf(Character.toLowerCase(letra)) != -1) {
                     vocales++;
-                    }
-                    else{
-                        consonantes ++;
-                    }
                 }
+                else{
+                    consonantes ++;
+                }
+            }
             else {
                 digitos ++;
             }
         }
         System.out.println("El numero de letras es: " + nletras);
         System.out.println("El numero de digitos es: " + digitos);
-        System.out.println("El numero de vocales es: " + vocales);
         System.out.println("El numero de vocales es: " + vocales);
         System.out.println("El numero de consonantes es: " + consonantes);
         System.out.println("El numero de mayúsculas es: " + mayusculas);
