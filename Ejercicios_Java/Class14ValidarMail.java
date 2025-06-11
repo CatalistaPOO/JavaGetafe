@@ -18,6 +18,8 @@ public class Class14ValidarMail {
         System.out.println("escriba su e-mail: ");
         String email = teclado.nextLine();
 
+        teclado.close(); // Cierra el scanner
+
         if (email.contains("@")==true && email.contains(".")==true && email.length() != 0){
             if (email.startsWith("@") || email.endsWith("@")){
                 System.out.println("ERROR: @ no está bien posicionada");

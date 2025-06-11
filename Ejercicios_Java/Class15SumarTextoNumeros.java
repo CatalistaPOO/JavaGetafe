@@ -10,6 +10,8 @@ public class Class15SumarTextoNumeros {
         System.out.println("Introduce un texto para averiguar su suma de caractéres");
         String textoNumeros = teclado.nextLine();
 
+        teclado.close(); // Cierra el scanner
+
         for (int i = 0; i < textoNumeros.length(); i++){
             char letra = textoNumeros.charAt(i);
             String aux = String.valueOf(letra);

@@ -9,6 +9,8 @@ public class Class05Estaciones {
         System.out.println("Introduce n2ero del 1 a 4 para indicar estacion: ");
         String dato = teclado.nextLine();
         int n = Integer.parseInt(dato);
+        
+        teclado.close(); // Cierra el scanner
 
         if (n == 1){
             System.out.println("PRIMAVERA");

@@ -56,5 +56,7 @@ public class Class13CalcularDNI {
             letra = letrasDni.charAt (resultado);
             System.out.println("su letra del DNI es " + letra);
         }
+
+        teclado.close(); // Cierra el scanner
     }
 }

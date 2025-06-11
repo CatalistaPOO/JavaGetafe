@@ -19,6 +19,8 @@ public class Class16Narcisista {
         System.out.println("Introduce número para saber es narcisista");
         String narcisista = teclado.nextLine();
 
+        teclado.close(); // Cierra el scanner
+
         for (int i = 0; i < narcisista.length(); i++){
             int longitud = narcisista.length();
             char letra = narcisista.charAt(i);

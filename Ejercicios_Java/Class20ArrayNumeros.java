@@ -22,6 +22,9 @@ public class Class20ArrayNumeros {
             numeros[i] = num;
         }
         System.out.println("Hemos finalizado la petición");
+
+        teclado.close(); // Cierra el scanner
+
         //AHORA NOS CENTRAMOS EN NUESTRO ARRAY
         mayor = numeros[0];
         menor = numeros[0];

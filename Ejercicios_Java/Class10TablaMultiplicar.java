@@ -12,6 +12,8 @@ public class Class10TablaMultiplicar {
         dato = teclado.nextLine();
         int nTabla = Integer.parseInt(dato);
 
+        teclado.close(); // Cierra el scanner
+
         System.out.println("------------------------------");
         System.out.println("TABLA DEL " + nTabla);
         System.out.println("------------------------------");

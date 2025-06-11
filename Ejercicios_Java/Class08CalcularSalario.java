@@ -41,6 +41,8 @@ public class Class08CalcularSalario {
         dato = teclado.nextLine();
         int destino = Integer.parseInt(dato);
 
+        teclado.close(); // Cierra el scanner
+
         if (destino > 101 || destino < 900){
             dieta = "NACIONAL";
         }

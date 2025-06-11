@@ -16,6 +16,8 @@ public class Class11Collatz {
         dato = teclado.nextLine();
         numero = Integer.parseInt(dato);
 
+        teclado.close(); // Cierra el scanner
+
         System.out.println(
         "------------------------------------------------------------------------" + "\n" +
         "TEORIA DE COLLATZ A PARTIR DEL NUMERO: " + numero + "\n" +

@@ -64,6 +64,7 @@ public class Class09Bucles {
             System.out.println("Di algo bonito (escribe stop para salir)");
             dato = teclado.nextLine();
         }
+        teclado.close(); // Cierra el scanner
 
     }
 }

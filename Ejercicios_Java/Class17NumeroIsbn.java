@@ -37,6 +37,9 @@ public  class Class17NumeroIsbn{
             System.out.println("El ISBN debe tener 10 cifras");
             sIsbn = teclado.nextLine();
         } 
+
+        teclado.close(); // Cierra el scanner
+
         int suma = 0;
         for (int i = 0; i < sIsbn.length();i++){
             char letra = sIsbn.charAt(i);

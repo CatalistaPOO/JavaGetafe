@@ -29,6 +29,8 @@ public class Class07DiaNacimiento {
         dato = teclado.nextLine();
         int dia = Integer.parseInt(dato);
 
+        teclado.close(); // Cierra el scanner
+
         // Debemos pedir el día, el número de mes y el año que el usuario haya nacido.
         // A partir de esto datos hay que calcular lo siguiente para averiguar el día de la semana de nacimiento:
         // Ejemplo --> 15/06/1997

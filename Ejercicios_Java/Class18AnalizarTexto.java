@@ -17,6 +17,8 @@ public class Class18AnalizarTexto {
         System.out.println("Introduce un texto incluyendo números");
         String texto = teclado.nextLine();
 
+        teclado.close(); // Cierra el scanner
+
         int nletras = 0;
         int digitos = 0;
         int vocales = 0;

@@ -21,6 +21,8 @@ public class Class06MayorTresNumeros {
         System.out.println("Introduce el tercer número: ");
          dato = teclado.nextLine();
          int n3 = Integer.parseInt(dato);
+
+         teclado.close(); // Cierra el scanner
         
         //CALCULA SOLO EL MAYOR:
         // if (n1 > n2 && n1 > n3){
