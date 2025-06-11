@@ -8,28 +8,39 @@ public class Class26MetodoMail {
         // En main tendremos la petición al usuario del mail
 
         Scanner teclado = new Scanner(System.in);
-        String mail = teclado.nextLine();
+        System.out.println("Introduce email a validar: ");
+        String correo = teclado.nextLine();
+        teclado.close();
 
+        System.out.println(compruebaMail(correo));
     }
 
-    public static boolean compruebaMail (String email){
+    public static String compruebaMail (String testCorreo){
 
         boolean validMail= false;
+        String respuesta = "";
 
-        if (email.contains("@")==true && email.contains(".")==true && email.length() != 0
+        if ((testCorreo.contains("@")==true && testCorreo.contains(".")==true && testCorreo.length() >= 0) == true
         
-                || (email.startsWith("@") || email.endsWith("@") )
+                && ((testCorreo.startsWith("@")  || testCorreo.endsWith("@")) == false )
             
-                || (email.indexOf("@") != email.lastIndexOf("@") )
+                && ((testCorreo.indexOf("@") != testCorreo.lastIndexOf("@")) == false )
             
-                || (email.indexOf(".") > 0)
+                && ((testCorreo.indexOf(".") > 0 ) == true)
 
-                ||(email.lastIndexOf("@") > email.lastIndexOf(".") )
+                && ((testCorreo.lastIndexOf("@") > testCorreo.lastIndexOf(".") == false) )
               
-                || (email.lastIndexOf(".") <= (email.length() - 3) || email.lastIndexOf(".") <=(email.length() - 2) ) 
+                && ((testCorreo.lastIndexOf(".") <= (testCorreo.length() - 3) || testCorreo.lastIndexOf(".") <=(testCorreo.length() - 2) == true) ) 
             ){
                 validMail = true;
-            }
-        return validMail;
+         }
+
+        if (validMail == true){
+             respuesta = testCorreo + " es válido";
+        }
+        else{
+            respuesta = testCorreo + " NO válido";
+        }
+        return respuesta;
     }
 }
