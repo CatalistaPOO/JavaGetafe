@@ -10,32 +10,26 @@ public class Class26MetodoMail {
         Scanner teclado = new Scanner(System.in);
         String mail = teclado.nextLine();
 
-
-
     }
 
-    public static boolean (String email){
+    public static boolean compruebaMail (String email){
+
         boolean validMail= false;
-        if (email.contains("@")==true && email.contains(".")==true && email.length() != 0 
-                || (email.startsWith("@") || email.endsWith("@"))){
+
+        if (email.contains("@")==true && email.contains(".")==true && email.length() != 0
+        
+                || (email.startsWith("@") || email.endsWith("@") )
             
                 || (email.indexOf("@") != email.lastIndexOf("@") )
-            else if(email.indexOf(".") > 0){
-                System.out.println("ERROR: no hay dominio ");
+            
+                || (email.indexOf(".") > 0)
+
+                ||(email.lastIndexOf("@") > email.lastIndexOf(".") )
+              
+                || (email.lastIndexOf(".") <= (email.length() - 3) || email.lastIndexOf(".") <=(email.length() - 2) ) 
+            ){
+                validMail = true;
             }
-            else if(email.lastIndexOf("@") > email.lastIndexOf(".")){
-                System.out.println("ERROR: tu dominio (.) empieza antes de tu email (@)");
-            }
-            else if(email.lastIndexOf(".") <= (email.length() - 3)|| email.lastIndexOf(".") <=(email.length() - 2)){
-                System.out.println("ERROR: Dominio demasiado largo");
-            }
-            else{
-                System.out.println("E-mail válido");
-            }
-        }
-        else{
-            System.out.println("Tu mail no tiene @  o  . ");
-        }
-        return istrue;
+        return validMail;
     }
 }
