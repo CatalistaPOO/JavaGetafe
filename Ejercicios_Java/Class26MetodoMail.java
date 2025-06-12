@@ -12,13 +12,19 @@ public class Class26MetodoMail {
         String correo = teclado.nextLine();
         teclado.close();
 
-        System.out.println(compruebaMail(correo));
+        boolean respuesta = compruebaMail(correo);
+        if (respuesta == true){
+            System.out.println("email válido");
+        }
+        else{
+            System.out.println("email incorrecto");
+        }
+       
     }
 
-    public static String compruebaMail (String testCorreo){
+    public static boolean compruebaMail (String testCorreo){
 
         boolean validMail= false;
-        String respuesta = "";
 
         if ((testCorreo.contains("@")==true && testCorreo.contains(".")==true && testCorreo.length() >= 0) == true
         
@@ -34,13 +40,7 @@ public class Class26MetodoMail {
             ){
                 validMail = true;
          }
-
-        if (validMail == true){
-             respuesta = testCorreo + " es válido";
-        }
-        else{
-            respuesta = testCorreo + " NO válido";
-        }
-        return respuesta;
+        return validMail;
     }
 }
+
